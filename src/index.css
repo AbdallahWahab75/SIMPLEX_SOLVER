@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --surface-canvas: #f7f4ee;
+  --surface-panel: #ffffff;
+  --surface-muted: #efeae0;
+  --surface-leaving-row: #fbf4e6;
+  --border-hairline: #dfd8ca;
+  --ink-primary: #14242b;
+  --ink-secondary: #4a5a61;
+  --petrol-700: #0f4c5c;
+  --petrol-800: #0b3945;
+  --petrol-50: #edf4f6;
+  --sand-accent: #b07d3c;
+}
+
+.dark {
+  --surface-canvas: #0e171b;
+  --surface-panel: #152228;
+  --surface-muted: #1d2e35;
+  --surface-leaving-row: #2a2419;
+  --border-hairline: #2a3d45;
+  --ink-primary: #eef2f3;
+  --ink-secondary: #a8b7bd;
+  --petrol-700: #1d7489;
+  --petrol-800: #6dc3d6;
+  --petrol-50: #163039;
+  --sand-accent: #d4a15a;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: var(--surface-canvas);
+    color: var(--ink-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  code,
+  pre,
+  .font-mono {
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+}

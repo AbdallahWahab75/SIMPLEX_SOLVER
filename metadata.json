@@ -1,0 +1,6 @@
+{
+  "name": "Simplex Solver",
+  "description": "Application pédagogique et professionnelle de résolution de problèmes de programmation linéaire continue par la méthode du simplexe.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
